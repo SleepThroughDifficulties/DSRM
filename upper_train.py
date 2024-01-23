@@ -433,7 +433,7 @@ def main(args):
             avg_loss.update(total_loss)
 
             pbar.set_description(f'epoch: {epoch: d}, '
-                                 f'avg_loss: {avg_loss.get_metric(): 0.4f}, '
+                                 f'avg_loss: {avg_loss.get_metric()[0]: 0.4f},  {avg_loss.get_metric()[1]: 0.8f} '
                                  f'loss: {loss:0.3f}, '
                                  f'valid loss: {valid_loss:0.3f}')
 
